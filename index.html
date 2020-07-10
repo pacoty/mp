@@ -28,7 +28,7 @@
 
   <nav style="box-shadow:none!important; margin-bottom: 5% !important;">
     <div class="nav-wrapper container" style="box-shadow:none!important; background-color: #ffffff !important;">
-      <a href="index.html" class="brand-logo"><img style=" max-width: 320px !important; margin-top: 5% !important;" src="mpp.png" alt=""></a>
+      <a href="index.html" class="brand-logo"><img style=" max-width: 320px !important; margin-top: 5% !important;" src="mercadopartnerlogo.png" alt=""></a>
       <ul class="right hide-on-med-and-down">
         <li><a class="" style="color: black !important; margin-left: 0px !important;">Ajuda</a></li>
      <!--  <li><a class="waves-effect waves-light btn" style="color:#009ee3 !important; background-color:#ffffff !important; box-shadow:none!important; border-style: solid; border-width: 1px; border-radius: 5px !important; margin-left: 0px !important;">Fazer pergunta</a></li> -->
@@ -42,7 +42,7 @@
 
       <div class="col s12 m7 l7" style="margin-top: 5% !important;">
         <div class="carousel carousel-slider center-align;">
-          <a class="carousel-item center-align" href="#one!"><img  src="https://mec.imgix.net/medias/sys_master/high-res/high-res/8810410049566/5025115-BK006.jpg?w=1200&h=1200&auto=format&q=60&fit=fill&bg=FFF"></a>
+          <a class="carousel-item center-align" href="#one!"><img  src="https://bucket.mlcdn.com/a/1777/1777478/images/8afc500757f01e52a55aadf274cb74909c7642bc.png"></a>
           <a class="carousel-item center-align" href="#two!"><img  src="https://i.ebayimg.com/images/g/gekAAOSwIJNeDQmd/s-l640.png"></a>
           <a class="carousel-item center-align" href="#three!"><img  src="https://i.ebayimg.com/images/g/FJgAAOSwz1peDQmk/s-l640.png"></a>
 
@@ -108,23 +108,24 @@
   <button href="https://www.mercadopago.com.br/checkout/v1/redirect?pref_id=157621813-8f9d7219-7e81-457e-a3ee-45e2a87a8239" class="waves-effect waves-light btn-large " style="background-color: #009ee3; font-size: 1.2rem; min-height: 48px !important; padding-right: 25% !important; padding-left: 25% !important; box-shadow:none!important; border-radius: 5px !important; margin-bottom: 2% !important;" href="https://www.mercadopago.com.br/checkout/v1/redirect?pref_id=157621813-8f9d7219-7e81-457e-a3ee-45e2a87a8239">Comprar agora</button><br>
   <button class="waves-effect waves-light btn-large " type="submit" style="color:#009ee3; font-size: 1.2rem; background-color: #ffffff !important; box-shadow:none!important; border-style: solid; border-width: 1px; border-radius: 5px !important; margin-left: 0px !important; padding-right: 25% !important; padding-left: 25% !important;">Fazer pergunta</button><br>
 </div>
-<p style="font-size: 16px !important; font-weight: 300; color: #000000; vertical-align: middle; margin-bottom: 10px !important; margin-top: 10px !important;"><img src="pgseguro.png" alt="" style="max-width: 50px !important; vertical-align: middle;"> Pague com Mercado Pago<br><span style="font-size: 12px !important; !important;">Essa loja processa pagamentos com o Mercado Pago. É rápido, seguro e não tem custo adicional. Compra Garantida, receba o produto que está esperando ou devolvemos o dinheiro.</span></p>
+<p style="font-size: 16px !important; font-weight: 300; color: #000000; vertical-align: middle; margin-bottom: 10px !important; margin-top: 10px !important;"><img src="pgseguro.png" alt="" style="max-width: 50px !important; vertical-align: middle;"> Pague com Mercado Pago<br><span style="font-size: 12px !important;">Essa loja processa pagamentos com o Mercado Pago. É rápido, seguro e não tem custo adicional. Compra Garantida, receba o produto que está esperando ou devolvemos o dinheiro.</span></p>
 <!-- 
 <p style="font-size: 12px !important; font-weight: 300; color: #000000; vertical-align: middle; margin-bottom: 10px !important; margin-top: 10px !important;"><img src="seguro.png" alt="" style="max-width: 32px !important; vertical-align: middle;">Compra Garantida, receba o produto que está esperando ou devolvemos o dinheiro.</p>
 <p style="font-size: 12px !important; font-weight: 300; color: #000000; vertical-align: middle; margin-bottom: 10px !important; margin-top: 10px !important;"><img src="pontos.png" alt="" style="max-width: 32px !important; vertical-align: middle;">Você ganha 10 Mercado Pontos.</p> -->
 
 </div>
 </div>
-
-
-
-<div class="fixed-action-btn">
-  <a class="btn-floating btn-large" href="https://www.mercadopago.com.br/checkout/v1/redirect?pref_id=157621813-8f9d7219-7e81-457e-a3ee-45e2a87a8239" style="background-color: #28316B !important;">
-    <i class="Large material-icons">sms</i>
-  </a>
 </div>
 
-</div>
+
+
+<script src="https://plugin.mandeumzap.com.br/v1/mandeumzap.js"></script>
+<script>
+  mandeUmZapChat.whatsapp.number = '551130429492';
+  mandeUmZapChat.api.serviceId = '6855db4d-98db-4908-8907-41ce18562da8';
+  mandeUmZapChat.api.accountId = 'a1e6f660-2c5a-4d30-9665-356c62313e85';
+  mandeUmZapChat.templates.url.urlApiMandeUmZap = 'https://metodomaker-api.digisac.app/';
+</script>
 
 
 
@@ -174,6 +175,19 @@
 
   $('.carousel.carousel-slider').carousel({
     fullWidth: true
+  });
+
+
+
+  document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.modal');
+    var instances = M.Modal.init(elems, options);
+  });
+
+  // Or with jQuery
+
+  $(document).ready(function(){
+    $('.modal').modal();
   });
         
 
